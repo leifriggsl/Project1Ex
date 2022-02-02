@@ -1,0 +1,1374 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(567b4222-e6b0-4087-bf82-e35995086035), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\leifr\Desktop\Project1Ex\target\scala-2.11\classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 21 deprecation warnings; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0morg.apache.spark.sql.AnalysisException: java.lang.RuntimeException: java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient;[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:106)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.lang.RuntimeException: java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:522)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1523)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.lang.reflect.InvocationTargetException[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: javax.jdo.JDOFatalDataStoreException: Unable to open a test connection to the given database. JDBC url = jdbc:derby:;databaseName=metastore_db;create=true, username = APP. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------[0m
+[0m[[0m[31merror[0m] [0m[0mjava.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	... 120 more[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database C:\Users\leifr\Desktop\Project1Ex\metastore_db.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	... 117 more[0m
+[0m[[0m[31merror[0m] [0m[0m------[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mNestedThrowables:[0m
+[0m[[0m[31merror[0m] [0m[0mjava.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:derby:;databaseName=metastore_db;create=true, username = APP. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------[0m
+[0m[[0m[31merror[0m] [0m[0mjava.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	... 120 more[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database C:\Users\leifr\Desktop\Project1Ex\metastore_db.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	... 117 more[0m
+[0m[[0m[31merror[0m] [0m[0m------[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.NucleusJDOHelper.getJDOExceptionForNucleusException(NucleusJDOHelper.java:436)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:788)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:derby:;databaseName=metastore_db;create=true, username = APP. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------[0m
+[0m[[0m[31merror[0m] [0m[0mjava.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	... 120 more[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database C:\Users\leifr\Desktop\Project1Ex\metastore_db.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	... 117 more[0m
+[0m[[0m[31merror[0m] [0m[0m------[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.PoolUtil.generateSQLException(PoolUtil.java:192)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:422)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35be6d78, see the next exception for details.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database C:\Users\leifr\Desktop\Project1Ex\metastore_db.[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.getJBMSLockOnDB(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore$6.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase$5.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootServiceModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.sql.DriverManager.getConnection(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:631)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.createStoreManagerForProperties(NucleusContext.java:1187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.NucleusContext.initialise(NucleusContext.java:356)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1960)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:808)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:701)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPMF(ObjectStore.java:365)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.getPersistenceManager(ObjectStore.java:394)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.initialize(ObjectStore.java:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.ObjectStore.setConf(ObjectStore.java:258)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.<init>(RawStoreProxy.java:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RawStoreProxy.getProxy(RawStoreProxy.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.newRawStore(HiveMetaStore.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.getMS(HiveMetaStore.java:571)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.createDefaultDB(HiveMetaStore.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.init(HiveMetaStore.java:461)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.<init>(RetryingHMSHandler.java:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.getProxy(RetryingHMSHandler.java:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStore.newRetryingHMSHandler(HiveMetaStore.java:5762)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.<init>(HiveMetaStoreClient.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient.<init>(SessionHiveMetaStoreClient.java:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.MetaStoreUtils.newInstance(MetaStoreUtils.java:1521)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.newState(HiveClientImpl.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.client.IsolatedClientLoader.createClient(IsolatedClientLoader.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:385)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveUtils$.newClientForMetadata(HiveUtils.scala:287)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client$lzycompute(HiveExternalCatalog.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.client(HiveExternalCatalog.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:97)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog$lzycompute(SharedState.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SharedState.externalCatalog(SharedState.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.externalCatalog(HiveSessionStateBuilder.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog$lzycompute(HiveSessionStateBuilder.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.catalog(HiveSessionStateBuilder.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anon$1.<init>(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.hive.HiveSessionStateBuilder.analyzer(HiveSessionStateBuilder.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.BaseSessionStateBuilder$$anonfun$build$2.apply(BaseSessionStateBuilder.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer$lzycompute(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.internal.SessionState.analyzer(SessionState.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:694)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex$.main(Project1Ex.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at Project1Ex.main(Project1Ex.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1983)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1922)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) org.apache.spark.sql.AnalysisException: java.lang.RuntimeException: java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient;[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 8 s, completed Feb 1, 2022 3:09:49 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, None)[0m
